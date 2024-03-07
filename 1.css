@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+body{
+height: 100%;
+width: 100%;
+} 
+.main{
+    width: 100vw;
+    height: 100vh;
+    background: url('https://img.freepik.com/free-photo/natures-beauty-reflected-tranquil-mountain-waters-generative-ai_188544-7867.jpg?t=st=1709740488~exp=1709744088~hmac=7808ee587933632cebfccd9ae08d8dda1360fd6692dea2ffe30c003f1ec14f0d&w=1380');
+    /* background-repeat: no-repeat; */
+    background-position: center;
+    background-size: cover;
+    padding: 0 8%;   
+    position: relative;
+    overflow: hidden;
+    filter: brightness(80%);
+}
+.text{
+    width: 120px;
+    padding: 20px 0;
+    cursor: pointer;
+    color: white;
+}
+.content{
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+}
+.content h1{
+    font-size: 3rem;
+    font-weight: 600;
+}
+.content h1 span{
+    color: #37f126;
+    /* #ff3753 */
+}
+.content button{
+    background: transparent;
+    border: 2px solid #fff;
+    outline: 0;
+    padding: 12px 25px;
+    color: white;
+    display: flex;
+    place-items: centre;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.content button i{
+    width: 15px;
+    margin-left: 10px;
+}
+.launcher{
+    display: flex;
+}
+.launcher div{
+    flex-basis: 100px;
+}
+.launcher div p{
+    font-size: 50px;
+}
+#logo{
+    font-size: 90px;
+    width: 25px;
+    position: absolute;
+    right: 16%;
+    bottom: 0px;
+    animation: rocket 3s linear infinite;
+}
+@keyframes rocket{
+    0%{
+        bottom: 0px;
+        opacity: 0;
+    }
+    20%{
+        bottom: 130px;
+        opacity: 0.3;
+    }
+    40%{
+        bottom: 260px;
+        opacity: 0.5;
+    }
+    60%{
+        bottom: 390px;
+        opacity: 0.75;
+    }
+    80%{
+        bottom: 600px;
+        opacity: 0.8;
+    }
+    100%{
+        bottom: 780px;
+        opacity: 1;
+    }
+}
